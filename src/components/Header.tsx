@@ -21,12 +21,11 @@ const Header = () => {
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-primary rounded-lg flex items-center justify-center">
-              <Play className="w-4 h-4 text-white" />
-            </div>
-            <span className="text-xl font-playfair font-semibold text-primary">
-              Africa Untold
-            </span>
+            <img 
+              src="/lovable-uploads/fee1e71d-33b9-4347-ade0-0da649b29afa.png" 
+              alt="AfricanGrounds Connect Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
