@@ -36,7 +36,7 @@ const Footer = () => {
                 <Play className="w-5 h-5 text-white" />
               </div>
               <span className="text-2xl font-playfair font-semibold">
-                Africa Untold
+                African Ground Connect
               </span>
             </div>
             
@@ -149,7 +149,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Africa Untold. All rights reserved.
+            © {currentYear} African Ground Connect. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6 text-sm">

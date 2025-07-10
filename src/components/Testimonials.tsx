@@ -10,7 +10,7 @@ const testimonials = [
     location: 'London, UK',
     image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80',
     rating: 5,
-    text: 'Africa Untold opened my eyes to the incredible diversity and beauty of the continent. Their storytelling is authentic and deeply moving. I\'ve planned three trips based on their recommendations!'
+    text: 'African Ground Connect opened my eyes to the incredible diversity and beauty of the continent. Their storytelling is authentic and deeply moving. I\'ve planned three trips based on their recommendations!'
   },
   {
     id: 2,

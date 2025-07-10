@@ -33,7 +33,7 @@ const About = () => {
           {/* Text Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-6">
-              About Africa Untold
+              About African Ground Connect
             </h2>
             
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
