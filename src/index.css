@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 /* African Ground Connect Design System */
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
   :root {
@@ -112,4 +115,13 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  .bg-gradient-hover:hover {
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary)) 100%) !important;
 }
+
+.bg-gradient-hover:hover .hover-text-white {
+  color: white !important;
+}
+
+}
+

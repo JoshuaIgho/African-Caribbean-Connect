@@ -11,7 +11,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Explore', href: '/explore' },
     { name: 'Stories', href: '/stories' },
-    { name: 'Culture', href: '/culture' },
+    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -30,15 +30,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </Link>
-            ))}
+            <div className="hidden md:flex items-center space-x-8">
+  {navItems.map((item) => (
+    <Link
+      key={item.name}
+      to={item.href}
+      className="relative group text-foreground font-medium transition duration-200 hover:text-accent"
+    >
+      {item.name}
+      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
+    </Link>
+  ))}
+</div>
+
           </div>
 
           {/* CTA Button */}

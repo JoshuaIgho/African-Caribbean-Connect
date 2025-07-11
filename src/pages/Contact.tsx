@@ -1,26 +1,31 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
+import { motion } from 'framer-motion';
 
 const ContactPage = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }} >
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-16">
-        <div className="py-20">
-          <div className="container mx-auto px-4 text-center mb-16">
+      <main className="pt">
+       <div className="">
+          <div className="container mx-auto px-4 text-center ">
             <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">
-              Get in Touch
-            </h1>
+              </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Have a story to share or want to collaborate? We'd love to hear from you.
-            </p>
+            </p>  
           </div>
         </div>
         <Contact />
       </main>
       <Footer />
     </div>
+    </motion.div>
   );
 };
 

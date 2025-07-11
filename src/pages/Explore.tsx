@@ -1,26 +1,33 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FeaturedDestinations from '@/components/FeaturedDestinations';
+import { motion } from 'framer-motion';
 
 const Explore = () => {
   return (
+     <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-background"
+    >
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-16">
-        <div className="py-20">
-          <div className="container mx-auto px-4 text-center mb-16">
+       <main className="">
+        <div className="">
+          <div className="container mx-auto px-4 text-center ">
             <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">
-              Explore Africa
-            </h1>
+              </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Discover the hidden gems, historical sites, and breathtaking landscapes that make Africa truly extraordinary.
-            </p>
+            </p>  
           </div>
         </div>
         <FeaturedDestinations />
       </main>
       <Footer />
     </div>
+    </motion.div>
   );
 };
 

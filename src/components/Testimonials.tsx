@@ -106,24 +106,7 @@ const Testimonials = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-muted/30 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-playfair font-bold text-primary mb-4">
-              Share Your Story
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Have you been inspired by our content? We'd love to hear about your African adventures!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-6 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors duration-200">
-                Submit Your Story
-              </button>
-              <button className="px-6 py-3 border border-border rounded-lg font-semibold hover:bg-muted transition-colors duration-200">
-                Write a Review
-              </button>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
