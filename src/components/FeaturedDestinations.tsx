@@ -64,16 +64,16 @@ const FeaturedDestinations = () => {
   return (
     <section id="explore" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-playfair font-bold text-primary mb-3 sm:mb-4 px-4">
             Featured Destinations
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm xs:text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Discover Africa's most captivating locations through our immersive video stories
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {destinations.map((destination, index) => (
             <Card 
               key={destination.id} 
@@ -84,7 +84,7 @@ const FeaturedDestinations = () => {
                 <img
                   src={destination.image}
                   alt={destination.name}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 xs:h-56 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -101,23 +101,23 @@ const FeaturedDestinations = () => {
                 </div>
               </div>
               
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="flex items-center gap-2 text-accent mb-2">
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-sm font-medium">{destination.location}</span>
+                  <MapPin className="w-3 xs:w-4 h-3 xs:h-4" />
+                  <span className="text-xs xs:text-sm font-medium">{destination.location}</span>
                 </div>
                 
-                <h3 className="text-xl font-playfair font-semibold text-primary mb-3">
+                <h3 className="text-base xs:text-lg sm:text-xl font-playfair font-semibold text-primary mb-2 sm:mb-3">
                   {destination.name}
                 </h3>
                 
-                <p className="text-muted-foreground mb-4 line-clamp-3">
+                <p className="text-muted-foreground mb-3 sm:mb-4 line-clamp-3 text-xs xs:text-sm sm:text-base">
                   {destination.description}
                 </p>
                 
                 <Button 
                   variant="outline" 
-                  className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-200"
+                  className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-200 text-xs xs:text-sm py-2"
                 >
                   Watch Story
                 </Button>
@@ -126,8 +126,8 @@ const FeaturedDestinations = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8">
+        <div className="text-center mt-8 sm:mt-12">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 text-sm sm:text-base">
             Explore All Destinations
           </Button>
         </div>
