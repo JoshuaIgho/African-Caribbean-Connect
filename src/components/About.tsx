@@ -34,11 +34,11 @@ const Abouts = () => {
     <section id="culture" className=" bg-muted/30 ">
       <div className="container mx-auto px-4 mb-20">
         <div className="flex justify-center">
-          <h1 className="text-2xl md:text-5xl font-playfair font-bold text-primary mb-6 pt-10 md:pt-20 md:mt-10 text-center">
-            About Africa Grounds Connect
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold text-primary mb-6 pt-10 md:pt-20 md:mt-10 text-center px-4 sm:px-0">
+            About African Grounds Connect
           </h1>
         </div>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4 sm:px-0">
           {/* Text Content */}
 
           <div>
@@ -62,7 +62,7 @@ const Abouts = () => {
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-8">
               <div>
                 <div className="text-2xl font-bold text-accent mb-2">
                   <CountUp end={1000000} duration={2} />+
@@ -102,17 +102,17 @@ const Abouts = () => {
             </div>
 
             {/* Floating Card */}
-            <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
-                    <Award className="w-6 h-6 text-accent" />
+            <Card className="absolute -bottom-4 sm:-bottom-8 -left-4 sm:-left-8 bg-white shadow-xl max-w-[200px] sm:max-w-none">
+              <CardContent className="p-3 sm:p-6">
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="w-8 sm:w-12 h-8 sm:h-12 bg-accent/10 rounded-full flex items-center justify-center">
+                    <Award className="w-4 sm:w-6 h-4 sm:h-6 text-accent" />
                   </div>
                   <div>
-                    <div className="font-semibold text-primary">
+                    <div className="font-semibold text-primary text-sm sm:text-base">
                       Award Winning
                     </div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="text-xs sm:text-sm text-muted-foreground">
                       Documentary Series
                     </div>
                   </div>

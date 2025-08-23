@@ -117,7 +117,7 @@ const Contact = () => {
           <Card>
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
                       Your Name
@@ -202,7 +202,7 @@ const Contact = () => {
               <p className="mb-6 opacity-90">
                 Subscribe to our newsletter and never miss a new African story or adventure.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
                 <Input
                   type="email"
                   placeholder="Enter your email"

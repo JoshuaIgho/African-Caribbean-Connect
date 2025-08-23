@@ -71,10 +71,10 @@ const CulturalStories = () => {
         </div>
 
         {/* Featured Story */}
-        <div className="relative mb-16">
+        <div className="relative mb-12 sm:mb-16">
           <Card className="overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
-              <div className="relative h-64 md:h-96">
+              <div className="relative h-48 sm:h-64 md:h-96">
                 <img
                   src={stories[currentIndex].image}
                   alt={stories[currentIndex].title}
@@ -87,7 +87,7 @@ const CulturalStories = () => {
                 </div>
               </div>
               
-              <CardContent className="p-8 flex flex-col justify-center">
+              <CardContent className="p-4 sm:p-6 md:p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                   <div className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
@@ -100,19 +100,19 @@ const CulturalStories = () => {
                   <span>{stories[currentIndex].readTime}</span>
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl font-playfair font-bold text-primary mb-4">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold text-primary mb-3 sm:mb-4">
                   {stories[currentIndex].title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
                   {stories[currentIndex].excerpt}
                 </p>
                 
-                <div className="flex gap-4">
-                  <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto">
                     Watch Now
                   </Button>
-                  <Button variant="outline">
+                  <Button variant="outline" className="w-full sm:w-auto">
                     Read Article
                   </Button>
                 </div>
@@ -121,22 +121,22 @@ const CulturalStories = () => {
           </Card>
 
           {/* Navigation */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-4 right-4 flex justify-between pointer-events-none">
+          <div className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4 right-2 sm:right-4 flex justify-between pointer-events-none">
             <Button
               size="icon"
               variant="outline"
-              className="pointer-events-auto bg-white/90 hover:bg-white"
+              className="pointer-events-auto bg-white/90 hover:bg-white w-8 h-8 sm:w-10 sm:h-10"
               onClick={prevSlide}
             >
-              <ChevronLeft className="w-4 h-4" />
+              <ChevronLeft className="w-3 sm:w-4 h-3 sm:h-4" />
             </Button>
             <Button
               size="icon"
               variant="outline"
-              className="pointer-events-auto bg-white/90 hover:bg-white"
+              className="pointer-events-auto bg-white/90 hover:bg-white w-8 h-8 sm:w-10 sm:h-10"
               onClick={nextSlide}
             >
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-3 sm:w-4 h-3 sm:h-4" />
             </Button>
           </div>
 

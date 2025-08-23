@@ -27,8 +27,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-white">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-4 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
@@ -129,8 +129,8 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="border-t border-white/20 pt-8 mb-8">
-          <div className="grid md:grid-cols-3 gap-6">
+        <div className="border-t border-white/20 pt-6 sm:pt-8 mb-6 sm:mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-accent" />
               <span className="text-gray-300">hello@africauntold.com</span>
@@ -147,7 +147,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/20 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
             © {currentYear} African Ground Connect. All rights reserved.
           </p>
@@ -166,11 +166,11 @@ const Footer = () => {
         </div>
 
         {/* Trust Signals */}
-        <div className="mt-8 pt-8 border-t border-white/20 text-center">
-          <p className="text-gray-400 text-sm mb-4">
+        <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-white/20 text-center">
+          <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4 px-4 sm:px-0">
             🔒 Secure & Trusted Platform • 🏆 Award-Winning Content • 🌍 Globally Recognized
           </p>
-          <div className="flex justify-center items-center gap-8 opacity-60">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-8 opacity-60">
             <span className="text-xs">Featured on National Geographic</span>
             <span className="text-xs">BBC Travel Partner</span>
             <span className="text-xs">UNESCO Collaboration</span>
