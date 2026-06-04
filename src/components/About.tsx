@@ -1,4 +1,5 @@
-import CountUp from "react-countup";
+import CountUpModule from "react-countup";
+const CountUp = (CountUpModule as any).default || CountUpModule;
 import { Heart, Globe, Users, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
