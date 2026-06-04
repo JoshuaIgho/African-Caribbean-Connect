@@ -1,5 +1,6 @@
 import React from "react";
-import CountUp from "react-countup";
+import CountUpModule from "react-countup";
+const CountUp = (CountUpModule as any).default || CountUpModule;
 import { Play, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
